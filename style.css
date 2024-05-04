@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    width:100%;
+    font-family:'poppins','san-srif';
+}
+.bold{
+
+    font-size:25px;
+    color: rgb(244,59,127);
+}
+li{
+    padding:5px;
+}
+.nav-link{
+    font-size:15px;
+    font-weight:bold;
+    border:2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom:2px solid rgb(244,59,127);
+    transition:.1s;
+}
+section{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-link{
+    color:rgb(244, 59, 127)!important;
+}
+.cantainer{
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+}
+.btn{
+    background-color:rgb(244,59,127) !important;
+}
+span{
+    color:rgb(244,59,127);
+    font-weight: bold;
+}
+p{
+    font-size:18px;
+}
+#about img{
+    border-radius: 50px;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+#services{
+    margin-left: 35px !important;
+}
+.card img{
+    
+    transition: 1s;
+}
+.inner{
+    overflow: hidden;
+}
+.card img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+/*.contact{
+    height:400px;
+    width: 600px;
+    background-color: rgb(241, 157, 198);
+border-radius: 50px;
+}
+ .inside{
+    background-color: rgb(252, 209, 237);
+    width: 300px;
+    height:600px;
+}
+.bg1{
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    margin-bottom: 50px!important;
+    margin-right: 400px;
+}
+.contact{
+    background-color: white;
+    display: block;
+}
+.content{
+    position: absolute;
+    left: 520px;
+}
+.box{
+position: relative;
+top:120px
+}
+*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  rgb(252, 209, 237);
+}
+.contact .content{
+    max-width:800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:black;
+}
+.contact .content p{
+    color:black;
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position:relative;
+    padding:20px 0;
+    display:flex;
+}
+.icon{
+    min-width: 60px;
+    height: 60px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+}
+.contactform{
+    width:40%;
+    padding:40px;
+    background-color: white;
+    position:relative;
+}
+.contactform .inputBox{
+    position:realative;
+    width:100%;
+    margin-top:10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width:100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px, 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+#submit{
+    background-color:rgb(244,59,127);
+    border-bottom: none;
+}/*
+.contactform .inputBox span{
+    position: absolute;
+    left:38px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events:none;
+    transition: 0.5s;
+    color:#666;
+}*/
+.contactform .inputBox input:focus~span,
+.contactform .inputBox input:valid~span,
+.contactform .inputBox textarea:focus~span,
+.contactform .inputBox textarea:valid~span{
+    color:rgb(244,59,127);
+    font-size: 12px;
+    transition: translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]
+{
+    width:100px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+@media(max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom:40px;
+    }
+    .container .contactinfo,
+    .contactform
+    {
+        width: 100%;
+    }
+    }
+
+
+
+   
+
+
+ 
